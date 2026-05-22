@@ -4,6 +4,7 @@ import Home from './pages/Home';
 import Products from './pages/Products';
 import ProductDetail from './pages/ProductDetail';
 import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
 import Wishlist from './pages/Wishlist';
 import Categories from './pages/Categories';
 import CategoryPage from './pages/CategoryPage';
@@ -19,6 +20,7 @@ function App() {
           <Route path="/products" element={<Products />} />
           <Route path="/product/:id" element={<ProductDetail />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/checkout" element={<Checkout />} />
           <Route path="/wishlist" element={<Wishlist />} />
           <Route path="/categories" element={<Categories />} />
           <Route path="/categories/:slug" element={<CategoryPage />} />
@@ -31,6 +33,10 @@ function App() {
           <Route path="/wires" element={<CategoryPage />} />
           <Route path="/circuit-breakers" element={<CategoryPage />} />
           <Route path="/pvc-pipes" element={<CategoryPage />} />
+          <Route path="/coolers" element={<CategoryPage />} />
+          <Route path="/pumps" element={<CategoryPage />} />
+          <Route path="/tools" element={<CategoryPage />} />
+          <Route path="/extensions" element={<CategoryPage />} />
         </Routes>
       </BrowserRouter>
     </CartProvider>
