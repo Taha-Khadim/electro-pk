@@ -26,12 +26,12 @@ body {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #c1c1c1;
+  background: #0077b6;
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #a1a1a1;
+  background: #023e8a;
 }
 
 .line-clamp-2 {
@@ -39,4 +39,268 @@ body {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* 3D Card Effects */
+.card-3d {
+  transform: perspective(1000px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-3d:hover {
+  transform: perspective(1000px) translateY(-10px) rotateX(3deg);
+  box-shadow: 0 25px 50px -12px rgba(0, 119, 182, 0.3);
+}
+
+/* 3D Button Effects */
+.btn-3d {
+  position: relative;
+  transform: translateZ(0);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 6px 0 0 rgba(0, 119, 182, 0.4), 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.btn-3d:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 0 0 rgba(0, 119, 182, 0.4), 0 8px 15px rgba(0,0,0,0.15);
+}
+
+.btn-3d:active {
+  transform: translateY(3px);
+  box-shadow: 0 3px 0 0 rgba(0, 119, 182, 0.4), 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* 3D Product Card */
+.product-card-3d {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+.product-card-3d:hover {
+  transform: rotateY(5deg) rotateX(-5deg) scale(1.03);
+}
+
+/* Floating Animation */
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-15px); }
+}
+
+.float-animation {
+  animation: float 4s ease-in-out infinite;
+}
+
+/* Pulse Glow Effect */
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 10px rgba(0, 119, 182, 0.4); }
+  50% { box-shadow: 0 0 30px rgba(0, 180, 216, 0.8), 0 0 50px rgba(0, 119, 182, 0.4); }
+}
+
+.pulse-glow {
+  animation: pulse-glow 2.5s ease-in-out infinite;
+}
+
+/* Depth Effects */
+.depth-1 { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
+.depth-2 { box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); }
+.depth-3 { box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23); }
+.depth-4 { box-shadow: 0 15px 30px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); }
+
+/* 3D Icon Container */
+.icon-3d {
+  transform: perspective(500px) rotateX(10deg);
+  transition: transform 0.3s ease;
+}
+
+.icon-3d:hover {
+  transform: perspective(500px) rotateX(0deg) scale(1.2);
+}
+
+/* Shine Effect Animation */
+@keyframes shine {
+  0% { left: -100%; }
+  100% { left: 200%; }
+}
+
+.shine-effect {
+  position: relative;
+  overflow: hidden;
+}
+
+.shine-effect::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+  animation: shine 3s ease-in-out infinite;
+}
+
+/* 3D Border Effect */
+.border-3d {
+  position: relative;
+  background: linear-gradient(145deg, #ffffff, #e6f4f9);
+}
+
+.border-3d::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 2px;
+  background: linear-gradient(135deg, rgba(255,255,255,0.8), transparent 50%, rgba(0,0,0,0.1));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+/* Hero Section */
+.hero-3d {
+  background: linear-gradient(135deg, #023e8a 0%, #0077b6 50%, #00b4d8 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-3d::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 80%, rgba(0, 180, 216, 0.3) 0%, transparent 40%),
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+/* Product Image 3D Hover */
+.product-image-3d {
+  transition: transform 0.4s ease, filter 0.4s ease;
+  filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
+}
+
+.product-image-3d:hover {
+  transform: scale(1.15) rotateY(15deg);
+  filter: drop-shadow(0 25px 40px rgba(0,0,0,0.25));
+}
+
+/* Loading Spinner 3D */
+.spinner-3d {
+  width: 60px;
+  height: 60px;
+  border: 5px solid rgba(0, 119, 182, 0.2);
+  border-top-color: #00b4d8;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* Form Input 3D Focus */
+.input-3d:focus {
+  box-shadow: 0 0 0 4px rgba(0, 180, 216, 0.3), inset 0 2px 4px rgba(0,0,0,0.05);
+  border-color: #00b4d8;
+}
+
+/* Category Card 3D */
+.category-card-3d {
+  background: linear-gradient(145deg, #ffffff, #e6f4f9);
+  transform-style: preserve-3d;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.category-card-3d:hover {
+  transform: translateY(-15px) rotateX(8deg) rotateZ(-2deg);
+  box-shadow: 
+    0 30px 60px rgba(0, 119, 182, 0.2),
+    inset 0 -5px 20px rgba(0, 119, 182, 0.05);
+}
+
+/* Price Tag 3D */
+.price-tag-3d {
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  clip-path: polygon(15% 0%, 100% 0%, 100% 100%, 15% 100%, 0% 50%);
+  box-shadow: 0 4px 15px rgba(0, 119, 182, 0.4);
+}
+
+/* Stagger Animation */
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(30px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out forwards;
+  opacity: 0;
+}
+
+.animate-fadeInUp:nth-child(1) { animation-delay: 0.1s; }
+.animate-fadeInUp:nth-child(2) { animation-delay: 0.2s; }
+.animate-fadeInUp:nth-child(3) { animation-delay: 0.3s; }
+.animate-fadeInUp:nth-child(4) { animation-delay: 0.4s; }
+.animate-fadeInUp:nth-child(5) { animation-delay: 0.5s; }
+
+/* 3D Divider */
+.divider-3d {
+  height: 4px;
+  background: linear-gradient(90deg, transparent, #00b4d8, #0077b6, transparent);
+  border-radius: 2px;
+}
+
+/* Number counter animation */
+@keyframes countUp {
+  from { opacity: 0; transform: scale(0.5) rotateY(90deg); }
+  to { opacity: 1; transform: scale(1) rotateY(0deg); }
+}
+
+.count-animation {
+  animation: countUp 0.8s ease-out;
+}
+
+/* 3D Nav Link */
+.nav-link-3d {
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.nav-link-3d::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #0077b6, #00b4d8);
+  border-radius: 2px;
+  transition: all 0.3s ease;
+  transform: translateX(-50%);
+}
+
+.nav-link-3d:hover::after {
+  width: 100%;
+}
+
+/* 3D Ribbon */
+.ribbon-3d {
+  position: absolute;
+  top: 20px;
+  right: -35px;
+  transform: rotate(45deg);
+  padding: 8px 40px;
+  font-size: 12px;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Parallax effect */
+.parallax {
+  transform: translateZ(0);
+  transition: transform 0.1s ease-out;
 }
