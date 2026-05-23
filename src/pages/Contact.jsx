@@ -49,9 +49,9 @@ const Contact = () => {
             <div className="grid lg:grid-cols-3 gap-8">
               {/* Contact Info */}
               <div className="lg:col-span-1">
-                <div className="bg-yellow-500 rounded-2xl p-8 text-gray-900 mb-8">
+                <div className="bg-gradient-to-br from-cyan-500 to-cyan-400 rounded-2xl p-8 text-white mb-8 shadow-lg">
                   <h2 className="text-2xl font-bold mb-6">Get in Touch</h2>
-                  <p className="mb-6">
+                  <p className="mb-6 text-white/90">
                     Have questions about our products or need help with your order? 
                     We're here to help!
                   </p>
@@ -124,7 +124,7 @@ const Contact = () => {
                             value={formData.name}
                             onChange={handleChange}
                             required
-                            className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-yellow-500"
+                            className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-cyan-500"
                             placeholder="Ahmed Khan"
                           />
                         </div>
@@ -136,7 +136,7 @@ const Contact = () => {
                             value={formData.email}
                             onChange={handleChange}
                             required
-                            className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-yellow-500"
+                            className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-cyan-500"
                             placeholder="ahmed@example.com"
                           />
                         </div>
@@ -150,7 +150,7 @@ const Contact = () => {
                             name="phone"
                             value={formData.phone}
                             onChange={handleChange}
-                            className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-yellow-500"
+                            className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-cyan-500"
                             placeholder="+92 300 1234567"
                           />
                         </div>
@@ -161,7 +161,7 @@ const Contact = () => {
                             value={formData.subject}
                             onChange={handleChange}
                             required
-                            className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-yellow-500"
+                            className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-cyan-500"
                           >
                             <option value="">Select a subject</option>
                             <option value="order">Order Inquiry</option>
@@ -181,14 +181,14 @@ const Contact = () => {
                           onChange={handleChange}
                           required
                           rows={5}
-                          className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-yellow-500 resize-none"
+                          className="w-full border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:border-cyan-500 resize-none"
                           placeholder="How can we help you?"
                         />
                       </div>
                       
                       <button
                         type="submit"
-                        className="w-full bg-yellow-500 text-gray-900 font-bold py-3 rounded-lg hover:bg-yellow-400 transition-colors"
+                        className="w-full bg-gradient-to-r from-cyan-500 to-cyan-400 text-white font-bold py-3 rounded-lg hover:from-cyan-400 hover:to-cyan-300 transition-colors shadow-lg hover:shadow-xl"
                       >
                         Send Message
                       </button>
