@@ -39,47 +39,20 @@ const Footer = () => {
 
   return (
     <footer className="bg-gradient-to-t from-gray-900 via-gray-900 to-gray-800 text-gray-300">
-      {/* Newsletter Section */}
-      <div className="bg-gradient-to-r from-yellow-500 via-yellow-400 to-yellow-500 text-gray-900 py-10">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col lg:flex-row items-center justify-between gap-6">
-            <div className="text-center lg:text-left">
-              <h3 className="text-2xl font-bold flex items-center gap-2">
-                ⚡ Get Exclusive Deals!
-              </h3>
-              <p className="text-gray-800 mt-1">Subscribe for latest products and special offers</p>
-            </div>
-            <form className="flex w-full lg:w-auto flex-col sm:flex-row gap-2">
-              <input 
-                type="email" 
-                placeholder="Enter your email"
-                className="flex-1 lg:w-72 px-5 py-3 rounded-lg sm:rounded-l-lg sm:rounded-r-none focus:outline-none text-gray-900 shadow-lg"
-              />
-              <button 
-                type="submit"
-                className="bg-gray-900 text-white px-8 py-3 rounded-lg sm:rounded-l-none sm:rounded-r-lg hover:bg-gray-800 transition-all font-semibold shadow-lg hover:shadow-xl transform hover:-translate-y-0.5"
-              >
-                Subscribe 🔔
-              </button>
-            </form>
-          </div>
-        </div>
-      </div>
-
       {/* Main Footer */}
       <div className="container mx-auto px-4 py-12">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="sm:col-span-2 lg:col-span-1">
             <Link to="/" className="flex items-center gap-3 mb-4">
-              <div className="bg-yellow-500 text-gray-900 p-3 rounded-xl shadow-lg">
+              <div className="bg-gradient-to-br from-cyan-500 to-cyan-400 text-white p-3 rounded-xl shadow-lg">
                 <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
                 </svg>
               </div>
               <div>
                 <span className="text-white text-2xl font-bold">Electro.pk</span>
-                <p className="text-xs text-yellow-500">Pakistan's Electric Store</p>
+                <p className="text-xs bg-gradient-to-r from-cyan-400 to-cyan-500 bg-clip-text text-transparent font-medium">Pakistan's Electric Store</p>
               </div>
             </Link>
             <p className="text-gray-400 mb-4 leading-relaxed">
@@ -116,8 +89,8 @@ const Footer = () => {
             <ul className="space-y-2">
               {categories.map((cat) => (
                 <li key={cat.path}>
-                  <Link to={cat.path} className="hover:text-yellow-500 transition-colors flex items-center gap-2 hover:translate-x-1">
-                    <span className="text-yellow-500">›</span> {cat.name}
+                  <Link to={cat.path} className="hover:text-cyan-400 transition-colors flex items-center gap-2 hover:translate-x-1">
+                    <span className="text-cyan-400">›</span> {cat.name}
                   </Link>
                 </li>
               ))}
@@ -132,8 +105,8 @@ const Footer = () => {
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.path + link.name}>
-                  <Link to={link.path} className="hover:text-yellow-500 transition-colors flex items-center gap-2 hover:translate-x-1">
-                    <span className="text-yellow-500">›</span> {link.name}
+                  <Link to={link.path} className="hover:text-cyan-400 transition-colors flex items-center gap-2 hover:translate-x-1">
+                    <span className="text-cyan-400">›</span> {link.name}
                   </Link>
                 </li>
               ))}
@@ -147,23 +120,23 @@ const Footer = () => {
             </h4>
             <ul className="space-y-3">
               <li className="flex items-start gap-3">
-                <span className="text-yellow-500 mt-1">📍</span>
+                <span className="text-cyan-400 mt-1">📍</span>
                 <span className="text-gray-400">{contactInfo.address}</span>
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-yellow-500">📱</span>
-                <a href={`tel:${contactInfo.phone.replace(/\s/g, '')}`} className="hover:text-yellow-500 transition-colors">{contactInfo.phone}</a>
+                <span className="text-cyan-400">📱</span>
+                <a href={`tel:${contactInfo.phone.replace(/\s/g, '')}`} className="hover:text-cyan-400 transition-colors">{contactInfo.phone}</a>
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-yellow-500">💬</span>
-                <a href={`https://wa.me/${contactInfo.whatsapp.replace(/\s|\+|\D/g, '')}`} target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500 transition-colors">WhatsApp</a>
+                <span className="text-cyan-400">💬</span>
+                <a href={`https://wa.me/${contactInfo.whatsapp.replace(/\s|\+|\D/g, '')}`} target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400 transition-colors">WhatsApp</a>
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-yellow-500">✉️</span>
-                <a href={`mailto:${contactInfo.email}`} className="hover:text-yellow-500 transition-colors">{contactInfo.email}</a>
+                <span className="text-cyan-400">✉️</span>
+                <a href={`mailto:${contactInfo.email}`} className="hover:text-cyan-400 transition-colors">{contactInfo.email}</a>
               </li>
               <li className="flex items-center gap-3">
-                <span className="text-yellow-500">⏰</span>
+                <span className="text-cyan-400">⏰</span>
                 <span className="text-gray-400">{contactInfo.timings}</span>
               </li>
             </ul>
@@ -189,15 +162,15 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
             <div>
               <p className="text-gray-400 text-sm">
-                © {currentYear} <Link to="/" className="text-yellow-500 hover:underline font-semibold">Electro.pk</Link>. All rights reserved. Made with ❤️ in Pakistan 🇵🇰
+                © {currentYear} <Link to="/" className="bg-gradient-to-r from-cyan-400 to-cyan-500 bg-clip-text text-transparent hover:underline font-semibold">Electro.pk</Link>. All rights reserved. Made with ❤️ in Pakistan 🇵🇰
               </p>
-              <p className="text-xs text-gray-500 mt-1">Powered by <a href="https://lumoracode.com" target="_blank" rel="noopener noreferrer" className="hover:text-yellow-500">Lumoracode</a></p>
+              <p className="text-xs text-gray-500 mt-1">Powered by <a href="https://lumoracode.com" target="_blank" rel="noopener noreferrer" className="hover:text-cyan-400">Lumoracode</a></p>
             </div>
             <div className="flex items-center gap-6 text-sm flex-wrap justify-center">
-              <Link to="/" className="hover:text-yellow-500 transition-colors">Home</Link>
-              <Link to="/products" className="hover:text-yellow-500 transition-colors">Products</Link>
-              <Link to="/about" className="hover:text-yellow-500 transition-colors">About</Link>
-              <Link to="/contact" className="hover:text-yellow-500 transition-colors">Contact</Link>
+              <Link to="/" className="hover:text-cyan-400 transition-colors">Home</Link>
+              <Link to="/products" className="hover:text-cyan-400 transition-colors">Products</Link>
+              <Link to="/about" className="hover:text-cyan-400 transition-colors">About</Link>
+              <Link to="/contact" className="hover:text-cyan-400 transition-colors">Contact</Link>
             </div>
           </div>
         </div>
