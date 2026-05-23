@@ -18,11 +18,11 @@ const Home = () => {
           <div className="container mx-auto px-4">
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div>
-                <div className="inline-block bg-yellow-500 text-gray-900 text-sm font-bold px-4 py-1 rounded-full mb-4">
+                <div className="inline-block bg-gradient-to-r from-cyan-500 to-cyan-400 text-white text-sm font-bold px-4 py-1 rounded-full mb-4">
                   🔥 New Arrivals Available
                 </div>
                 <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">
-                  Pakistan's Most Trusted <span className="text-yellow-500">Electric Store</span>
+                  Pakistan's Most Trusted <span className="bg-gradient-to-r from-cyan-400 to-cyan-500 bg-clip-text text-transparent">Electric Store</span>
                 </h1>
                 <p className="text-xl text-gray-300 mb-8">
                   Shop premium fans, LED lights, switches, and electrical supplies at unbeatable prices. 
@@ -31,7 +31,7 @@ const Home = () => {
                 <div className="flex flex-col sm:flex-row gap-4">
                   <Link 
                     to="/products" 
-                    className="bg-yellow-500 text-gray-900 px-8 py-4 rounded-full font-bold text-lg hover:bg-yellow-400 transition-colors flex items-center justify-center gap-2"
+                    className="bg-gradient-to-r from-cyan-500 to-cyan-400 text-white px-8 py-4 rounded-full font-bold text-lg hover:from-cyan-400 hover:to-cyan-300 transition-all flex items-center justify-center gap-2 shadow-lg hover:shadow-xl hover:scale-105"
                   >
                     Shop Now <ArrowRightIcon className="w-5 h-5" />
                   </Link>
@@ -60,7 +60,7 @@ const Home = () => {
         </section>
 
         {/* Features Strip */}
-        <section className="bg-yellow-500 py-6">
+        <section className="bg-gradient-to-r from-cyan-500 to-cyan-400 py-6">
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
               <div className="flex items-center justify-center gap-2">
@@ -136,7 +136,7 @@ const Home = () => {
               </div>
               <Link 
                 to="/products" 
-                className="hidden md:flex items-center gap-2 text-yellow-600 hover:text-yellow-700 font-semibold"
+                className="hidden md:flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-cyan-400 text-white px-5 py-2 rounded-full hover:from-cyan-400 hover:to-cyan-300 font-semibold transition-all shadow-md hover:shadow-lg hover:scale-105"
               >
                 View All <ArrowRightIcon className="w-5 h-5" />
               </Link>
@@ -149,7 +149,7 @@ const Home = () => {
             <div className="text-center mt-8 md:hidden">
               <Link 
                 to="/products" 
-                className="inline-flex items-center gap-2 bg-yellow-500 text-gray-900 px-6 py-3 rounded-full font-semibold hover:bg-yellow-400"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-cyan-400 text-white px-6 py-3 rounded-full font-semibold hover:from-cyan-400 hover:to-cyan-300 transition-all shadow-md hover:shadow-lg hover:scale-105"
               >
                 View All Products <ArrowRightIcon className="w-5 h-5" />
               </Link>
@@ -168,7 +168,7 @@ const Home = () => {
             </div>
             <div className="grid md:grid-cols-3 gap-8">
               <div className="text-center">
-                <div className="w-20 h-20 bg-yellow-500/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="w-20 h-20 bg-gradient-to-r from-cyan-500 to-cyan-400 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                   <span className="text-4xl">🏪</span>
                 </div>
                 <h3 className="text-xl font-bold mb-3">Wide Range of Products</h3>
@@ -177,7 +177,7 @@ const Home = () => {
                 </p>
               </div>
               <div className="text-center">
-                <div className="w-20 h-20 bg-yellow-500/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="w-20 h-20 bg-gradient-to-r from-cyan-500 to-cyan-400 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                   <span className="text-4xl">💰</span>
                 </div>
                 <h3 className="text-xl font-bold mb-3">Best Prices Guaranteed</h3>
@@ -186,7 +186,7 @@ const Home = () => {
                 </p>
               </div>
               <div className="text-center">
-                <div className="w-20 h-20 bg-yellow-500/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <div className="w-20 h-20 bg-gradient-to-r from-cyan-500 to-cyan-400 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                   <span className="text-4xl">🚚</span>
                 </div>
                 <h3 className="text-xl font-bold mb-3">Pakistan-Wide Delivery</h3>
@@ -199,10 +199,10 @@ const Home = () => {
         </section>
 
         {/* CTA Section */}
-        <section className="py-16 bg-yellow-500">
+        <section className="py-16 bg-gradient-to-r from-cyan-500 to-cyan-400">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Need Help Choosing Products?</h2>
-            <p className="text-gray-800 max-w-2xl mx-auto mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">Need Help Choosing Products?</h2>
+            <p className="text-white/80 max-w-2xl mx-auto mb-8">
               Our team is available on WhatsApp to help you find the right products for your needs
             </p>
             <a 

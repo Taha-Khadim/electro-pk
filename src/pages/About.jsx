@@ -44,7 +44,7 @@ const About = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-3xl mx-auto text-center">
               <h1 className="text-4xl md:text-5xl font-bold mb-6">
-                Pakistan's Trusted <span className="text-yellow-500">Electric Store</span>
+                Pakistan's Trusted <span className="bg-gradient-to-r from-cyan-400 to-cyan-500 bg-clip-text text-transparent">Electric Store</span>
               </h1>
               <p className="text-xl text-gray-300 mb-8">
                 Electro.pk has been serving homes and businesses across Pakistan with quality electrical 
@@ -52,7 +52,7 @@ const About = () => {
               </p>
               <Link 
                 to="/products" 
-                className="inline-flex items-center gap-2 bg-yellow-500 text-gray-900 px-8 py-3 rounded-full font-bold hover:bg-yellow-400 transition-colors"
+                className="inline-flex items-center gap-2 bg-gradient-to-r from-cyan-500 to-cyan-400 text-white px-8 py-3 rounded-full font-bold hover:from-cyan-400 hover:to-cyan-300 transition-all shadow-lg hover:shadow-xl hover:scale-105"
               >
                 Shop Now
               </Link>
@@ -106,8 +106,8 @@ const About = () => {
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
               {features.map((feature, idx) => (
                 <div key={idx} className="bg-white rounded-xl p-6 shadow-sm text-center">
-                  <div className="w-16 h-16 bg-yellow-50 rounded-full flex items-center justify-center mx-auto mb-4">
-                    <feature.icon className="w-8 h-8 text-yellow-600" />
+                  <div className="w-16 h-16 bg-gradient-to-br from-cyan-100 to-cyan-50 rounded-full flex items-center justify-center mx-auto mb-4 shadow-md">
+                    <feature.icon className="w-8 h-8 bg-gradient-to-r from-cyan-500 to-cyan-400 bg-clip-text text-transparent" />
                   </div>
                   <h3 className="font-bold text-lg mb-2">{feature.title}</h3>
                   <p className="text-gray-600 text-sm">{feature.description}</p>
@@ -138,19 +138,19 @@ const About = () => {
           <div className="container mx-auto px-4">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
               <div>
-                <div className="text-4xl md:text-5xl font-bold text-yellow-500 mb-2">5000+</div>
+                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-cyan-500 bg-clip-text text-transparent mb-2">5000+</div>
                 <p className="text-gray-400">Happy Customers</p>
               </div>
               <div>
-                <div className="text-4xl md:text-5xl font-bold text-yellow-500 mb-2">30+</div>
+                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-cyan-500 bg-clip-text text-transparent mb-2">30+</div>
                 <p className="text-gray-400">Product Brands</p>
               </div>
               <div>
-                <div className="text-4xl md:text-5xl font-bold text-yellow-500 mb-2">500+</div>
+                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-cyan-500 bg-clip-text text-transparent mb-2">500+</div>
                 <p className="text-gray-400">Products</p>
               </div>
               <div>
-                <div className="text-4xl md:text-5xl font-bold text-yellow-500 mb-2">50+</div>
+                <div className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-cyan-400 to-cyan-500 bg-clip-text text-transparent mb-2">50+</div>
                 <p className="text-gray-400">Cities Served</p>
               </div>
             </div>
@@ -158,22 +158,22 @@ const About = () => {
         </section>
 
         {/* CTA */}
-        <section className="py-16 bg-yellow-500">
+        <section className="py-16 bg-gradient-to-r from-cyan-500 to-cyan-400">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-3xl font-bold mb-4 text-gray-900">Ready to Shop?</h2>
-            <p className="text-gray-800 mb-8 max-w-2xl mx-auto">
+            <h2 className="text-3xl font-bold mb-4 text-white">Ready to Shop?</h2>
+            <p className="text-white/80 mb-8 max-w-2xl mx-auto">
               Browse our wide range of electrical products and experience the Electro.pk difference.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
                 to="/products" 
-                className="bg-gray-900 text-white px-8 py-3 rounded-full font-bold hover:bg-gray-800"
+                className="bg-gray-900 text-white px-8 py-3 rounded-full font-bold hover:bg-gray-800 transition-all shadow-lg hover:shadow-xl hover:scale-105"
               >
                 Shop Now
               </Link>
               <Link 
                 to="/contact" 
-                className="bg-white text-gray-900 px-8 py-3 rounded-full font-bold hover:bg-gray-100"
+                className="bg-white text-cyan-600 px-8 py-3 rounded-full font-bold hover:bg-gray-100 transition-all shadow-lg hover:shadow-xl hover:scale-105"
               >
                 Contact Us
               </Link>
