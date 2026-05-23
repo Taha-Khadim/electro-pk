@@ -65,7 +65,7 @@ const ProductCard = ({ product }) => {
           <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4 opacity-0 group-hover:opacity-100 transition-opacity">
             <button
               onClick={handleAddToCart}
-              className="w-full bg-yellow-500 text-gray-900 font-semibold py-2 rounded-lg hover:bg-yellow-400 transition-colors flex items-center justify-center gap-2"
+              className="w-full bg-gradient-to-r from-cyan-500 to-cyan-400 text-white font-semibold py-2 rounded-lg hover:from-cyan-400 hover:to-cyan-300 transition-colors flex items-center justify-center gap-2 shadow-lg hover:shadow-xl"
             >
               <ShoppingCartIcon className="w-5 h-5" />
               Add to Cart
@@ -87,7 +87,7 @@ const ProductCard = ({ product }) => {
           </div>
 
           {/* Name */}
-          <h3 className="font-semibold text-gray-900 mb-1 line-clamp-2 group-hover:text-yellow-600 transition-colors">
+          <h3 className="font-semibold text-gray-900 mb-1 line-clamp-2 group-hover:bg-gradient-to-r group-hover:from-cyan-500 group-hover:to-cyan-400 group-hover:bg-clip-text group-hover:text-transparent transition-all">
             {product.name}
           </h3>
 
